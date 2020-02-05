@@ -1,9 +1,15 @@
 
+
+var cityArray =[] ;
+if( localStorage.getItem("city-input") !== null){
+    JSON.parse(localStorage.getItem("city-input"))
+
+}
 // search term and button 
 $("#find-city").on("click", function(event) {
-event.preventDefault();
-var city = $("#city-input").val();
-   
+    event.preventDefault();
+    var city = $("#city-input").val();
+    cityArray.push(city)
 // main card api call
     var APIKey = "166a433c57516f51dfab1f7edaed8413";
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?" +
@@ -65,12 +71,17 @@ var city = $("#city-input").val();
         
 
 // local storage
-localStorage.setItem("city-input", cityls);
-var cityls = localStorage.getItem("#city-input");
-$("#storedCities").prepend(cityls);
+localStorage.setItem("city-input", JSON.stringify(cityArray));
+render(cityArray);
            
         
     });
    
     
 });
+
+
+function render(cityArray) {
+
+    
+}
