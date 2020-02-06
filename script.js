@@ -38,7 +38,7 @@ $("#find-city").on("click", function (event) {
             // UV Index api call
             
             var APIKey = "166a433c57516f51dfab1f7edaed8413";
-            var queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=" +APIKey + "&lat=" + lat + "&lon=" + lon;
+            var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" +APIKey + "&lat=" + lat + "&lon=" + lon;
             
             
             $.ajax({
@@ -54,7 +54,7 @@ $("#find-city").on("click", function (event) {
             
 
     // 5 day forcast api call
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?appid=" + APIKey + "&q=" + city + "&count=5";
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?appid=" + APIKey + "&q=" + city + "&count=5";
 
 
     $.ajax({
