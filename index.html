@@ -26,17 +26,19 @@
                 <label for="city-input"></label>
                 <input type="text" id="city-input">
                 <input id="find-city" type="submit" value="Search">
-                <p id="storedCities"></p>
+                <span id="storedCities"></span>
             </form>
         <div class="col-lg-7 card text-white bg-primary">
             <h1 class="card-header city">City:</h1>
-                <span class="card-body">
+                <div class="card-body">
                     <h3 class="card-text temp">Temperature:</h3>
-                    <h4 class="card-text description">Weather Conditions:</h4>
+                    <img id="wIcon" class="card-text" src="" alt="">
+                </img>
+                    <!-- <h4 class="card-text description" src="">Weather Conditions:</h4> -->
                     <h5 class="card-text humidity">Humidity:</h5>
                     <h5 class="card-text wind">Wind Speed:</h5>
                     <h5 class="card-text uvIndex">UV Index:</h5>
-                </span>
+                </div>
                 
         </div>
         </span>
@@ -45,17 +47,16 @@
     <br></br>
     <br></br>
 
-    <row class="card-group">
-        
-        <div class="card fiveDay">
+    <row class="card-group text-center">        
+        <div class="card blue fiveDay">
             <div class="card-body">
                 <h5 class="card-title date1">Date:</h5>
                 <p class="card-text temp1">Temperature:
                 </p>
-                <p class="card-text humidity1">Humidity:
-                </p>
-                <p class="card-text description1">Conditions:
-                </p>
+                <!-- <p class="card-text humidity1">Humidity: -->
+                <!-- </p> -->
+                <img id="wIcon1" class="card-text" src="" alt="">
+                </img>
             </div>
         </div>
         
@@ -64,22 +65,22 @@
                 <h5 class="card-title date2">Date:</h5>
                 <p class="card-text temp2">Temperature:
                 </p>
-                <p class="card-text humidity2">Humidity:
-                </p>
-                <p class="card-text description2">Conditions:
-                </p>
+                <!-- <p class="card-text humidity2">Humidity: -->
+                <!-- </p> -->
+                <img id="wIcon2" class="card-text" src="" alt="">
+                </img>
             </div>
         </div>
      
-        <div class="card fiveDay">
+        <div class="card blue fiveDay">
             <div class="card-body">
                 <h5 class="card-title date3">Date:</h5>
                 <p class="card-text temp3">Temperature:
                 </p>
-                <p class="card-text humidity3">Humidity:
-                </p>
-                <p class="card-text description3">Conditions:
-                </p>
+                <!-- <p class="card-text humidity3">Humidity: -->
+                <!-- </p> -->
+                <img id="wIcon3" class="card-text" src="" alt="">
+                </img>
             </div>
         </div>
         
@@ -88,32 +89,33 @@
                 <h5 class="card-title date4">Date:</h5>
                 <p class="card-text temp4">Temperature:
                 </p>
-                <p class="card-text humidity4">Humidity:
-                </p>
-                <p class="card-text description4">Conditions:
-                </p>
+                <!-- <p class="card-text humidity4">Humidity: -->
+                <!-- </p> -->
+                <img id="wIcon4" class="card-text" src="" alt="">
+                </img>
             </div>
         </div>
       
-        <div class="card fiveDay">
+        <div class="card blue fiveDay">
             <div class="card-body">
                 <h5 class="card-title date5">Date:</h5>
                 <p class="card-text temp5">Temperature:
                 </p>
-                <p class="card-text humidity5">Humidity:
-                </p>
-                <p class="card-text description5">Conditions:
-                </p>
+                <!-- <p class="card-text humidity5">Humidity: -->
+                <!-- </p> -->
+                <img id="wIcon5" class="card-text" src="" alt="">
+                </img>
             </div>
         </div>
       
     </row>
 
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+   
 
-    <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
 </body>
