@@ -12,8 +12,7 @@ $("#find-city").on("click", function (event) {
     event.preventDefault();
     var city = $("#city-input").val();
     cityArray.push(city);
-    
-    // $("#storedCities").append(city)
+    $(`<p><button class= "storedCities">${city}</button></p>`).appendTo("#storedCities")
 
     
     
@@ -56,7 +55,7 @@ $("#find-city").on("click", function (event) {
             .then(function (response) {
               
 
-                $(".uvIndex").text("UV Index: " + response.value);
+                $(".uvIndex").text(response.value);
             });
         });
             
@@ -131,11 +130,6 @@ $("#find-city").on("click", function (event) {
         });
 
     });
-
-
-
-
-
 
 
 function render(cityArray) {

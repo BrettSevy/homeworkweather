@@ -31,8 +31,17 @@ margin: 40px;
 
 }
 
-.red {
-    background-color: #ff6961;
+.uvIndexText{
+    float: left;
+    
+}
+
+.uvIndex {
+    background-color: red;
     color: white;
-    border: 1px solid #000000;
+    border: 1px solid #007bff;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.25rem;
+    
 }
